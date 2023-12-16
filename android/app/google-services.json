@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250850755557",
+    "project_id": "app-ban-hang-cf71d",
+    "storage_bucket": "app-ban-hang-cf71d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250850755557:android:5855bbf30b65a495b8650c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiyvIhLtckWw4hA2TGdebgHtQQmZaNfOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

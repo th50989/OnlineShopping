@@ -1,0 +1,24 @@
+import 'dart:convert' as convert;
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/crud/values.dart';
+import 'package:http/http.dart' as http;
+
+void main(List<String> arguments) async {
+  var url = Uri.parse('${Value.baseUrl}updateUser');
+  var response = await http.put(
+    url,
+    headers: {'Content-Type': 'application/json; charset=UTF-8'},
+    body: convert.jsonEncode({
+      "Ho_ten": "Trần Thị Vàng Anh",
+      "Ma_so": "QL_100",
+      "Ten_dang_nhap": "th",
+      "Mat_khau": "th"
+    }),
+  );
+  if (response.statusCode == 200) {
+    var jsonResponse = convert.jsonDecode(response.body);
+    debugPrint('resulst: $jsonResponse.');
+  } else {
+    debugPrint('Request failed with status: ${response.statusCode}.');
+  }
+}
